@@ -495,16 +495,16 @@ class AutoPlot:
         return merged_data[list(df.columns) + ["date", "data_index"]].set_index("date")
 
     def _add_to_autoscale_args(self, source, y_range):
+    
         """
-
         Parameters
         ----------
         source : ColumnDataSource
             The column data source.
         y_range : Bokeh Range
             The y_range attribute of the chart.
-
-        """
+        
+        
         added = False
         range_key = "bot_range_1"
         source_key = "bot_source_1"
@@ -522,7 +522,7 @@ class AutoPlot:
                 # Increment key
                 range_key = range_key[:-1] + str(int(range_key[-1]) + 1)
                 source_key = source_key[:-1] + str(int(source_key[-1]) + 1)
-
+        """
     def _add_backtest_price_data(self, backtest_price_data: pd.DataFrame) -> None:
         """Processes backtest price data to included integer index of base
         data.

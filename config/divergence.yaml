@@ -1,0 +1,16 @@
+# divergence.yaml
+NAME: 'Divergence'    # strategy name
+MODULE: 'divergence'                  # strategy module
+CLASS: 'AutoDivergence'             # strategy class
+INTERVAL: '1h'                  # stategy timeframe
+PERIOD: 300                     # candles required by strategy
+SIZING: 'risk'                  # sizing method
+RISK_PC: 1.5                    # risk per trade (%)
+PARAMETERS:                     # strategy parameters
+  rsi_period: 14
+
+  
+  # Exit level parameters
+  RR: 1.5
+
+WATCHLIST: ['EURUSD=X']         # strategy watchlist
